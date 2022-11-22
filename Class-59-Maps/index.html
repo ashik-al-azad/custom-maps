@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Font Awesome Cdn -->
+
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+
+    <!-- Link Style CSS -->
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- AIzaSyD28P-d2Y2wwUoG80Wl5RntzrMGQTFudhI -->
+
+    <div class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="googleMap" style="width: 100%; height: 1000px"></div>
+
+            <script>
+              function myMap() {
+                var mapOptions = {
+                  center: new google.maps.LatLng(22.931213, 90.7105786),
+                  zoom: 10,
+                  scrollwheel: false,
+                  styles: [
+                    { elementType: "geometry", stylers: [{ color: "#f7f7f7" }]},
+                    {"featureType": "road","elementType": "geometry.fill","stylers": [{"color": "#ffffff"}]},
+                    {"featureType": "water","elementType": "geometry.fill","stylers": [{"color": "#ededed"}]},
+                    {"featureType": "road.highway","elementType": "geometry","stylers": [{"color": "#f82727"}]},
+                    {
+		"featureType": "road.highway.controlled_access",
+		"elementType": "geometry",
+		"stylers": [
+			{
+				"color": "#252525"
+			}
+		]
+	},
+  {
+		"featureType": "road.arterial",
+		"elementType": "geometry",
+		"stylers": [
+			{
+				"color": "#18d337"
+			}
+		]
+	},
+  {
+		"featureType": "transit.line",
+		"elementType": "geometry.fill",
+		"stylers": [
+			{
+				"color": "#000000"
+			}
+		]
+	},
+	{
+		"featureType": "transit.station",
+		"elementType": "geometry",
+		"stylers": [
+			{
+				"color": "#000000"
+			}
+		]
+	},
+                  ],
+                  };
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+              }
+            </script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD28P-d2Y2wwUoG80Wl5RntzrMGQTFudhI&callback=myMap"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 1: jquery-3.6.0.min.js -->
+
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- main.js -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
